@@ -11,11 +11,6 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-// Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log('Connected to MongoDB'))
-  .catch(err => console.error('MongoDB connection error:', err));
-
 // Define Schema
 const mailingListSchema = new mongoose.Schema({
   email: {
@@ -29,11 +24,35 @@ const mailingListSchema = new mongoose.Schema({
 });
 
 // Explicitly setting collection name to 'Mailing_list' as requested
-const MailingList = mongoose.model('Mailing_list', mailingListSchema, 'Mailing_list');
+// Prevent OverwriteModelError in Serverless environments
+const MailingList = mongoose.models.Mailing_list || mongoose.model('Mailing_list', mailingListSchema, 'Mailing_list');
+
+// Maintain connection state for Serverless
+let isConnected = false;
+const connectDB = async () => {
+  if (isConnected) return;
+  
+  if (!process.env.MONGO_URI) {
+    console.error('MONGO_URI is not defined in environment variables');
+    throw new Error('Database configuration missing');
+  }
+
+  try {
+    await mongoose.connect(process.env.MONGO_URI);
+    isConnected = true;
+    console.log('Connected to MongoDB');
+  } catch (error) {
+    console.error('MongoDB connection error:', error);
+    throw error;
+  }
+};
 
 // API Routes
 app.post('/api/waitlist', async (req, res) => {
   try {
+    // Ensure database is connected before saving
+    await connectDB();
+    
     const { email } = req.body;
     
     if (!email) {
@@ -51,9 +70,12 @@ app.post('/api/waitlist', async (req, res) => {
 });
 
 if (process.env.NODE_ENV !== 'production') {
-  app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-  });
+  // Connect immediately in local development
+  connectDB().then(() => {
+    app.listen(PORT, () => {
+      console.log(`Server running on port ${PORT}`);
+    });
+  }).catch(console.error);
 }
 
 export default app;
