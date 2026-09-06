@@ -65,7 +65,7 @@ app.post('/api/waitlist', async (req, res) => {
     res.status(201).json({ message: 'Successfully joined the waitlist' });
   } catch (error) {
     console.error('Error saving to database:', error);
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ error: error.message || 'Internal server error', stack: error.stack });
   }
 });
 
