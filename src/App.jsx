@@ -174,7 +174,7 @@ function App() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('http://localhost:3000/api/waitlist', {
+      const response = await fetch('/api/waitlist', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
