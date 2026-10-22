@@ -1136,7 +1136,7 @@ a {
                   aria-hidden="true"
                 >
                   <defs>
-                    <linearGradient id="orbit-grad-v" x1="0" y1="0" x2="0" y2="1">
+                    <linearGradient id="orbit-grad-v" x1="310" y1="114" x2="310" y2="210" gradientUnits="userSpaceOnUse">
                       <stop offset="0%" stopColor="#89d9ba" stopOpacity="0.35" />
                       <stop offset="100%" stopColor="#9de0c4" stopOpacity="0.9" />
                     </linearGradient>
