@@ -512,7 +512,10 @@ a {
 
             <div className="hidden md:block">
               <button
-                onClick={() => scrollToSection("early-access")}
+                onClick={() => {
+  gtag('event', 'cta_click');
+  scrollToSection("early-access");
+}}
                 className="group flex items-center gap-2 rounded-full bg-[#1F5D4E] px-5 py-3 text-sm font-bold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#174B40]"
               >
                 Get Early Access
@@ -565,7 +568,10 @@ a {
                 </button>
 
                 <button
-                  onClick={() => scrollToSection("early-access")}
+                  onClick={() => {
+  gtag('event', 'cta_click');
+  scrollToSection("early-access");
+}}
                   className="mt-2 rounded-2xl bg-[#1F5D4E] px-4 py-3 text-left text-sm font-bold text-[#F7F3EB]"
                 >
                   Get Early Access →
@@ -612,7 +618,10 @@ a {
 
               <div className="mt-7 flex flex-col items-stretch justify-center gap-3 sm:mt-9 sm:flex-row sm:items-center">
                 <button
-                  onClick={() => scrollToSection("early-access")}
+                  onClick={() => {
+  gtag('event', 'cta_click');
+  scrollToSection("early-access");
+}}
                   className="group flex w-full items-center justify-center gap-3 rounded-full bg-[#b8e9d4] px-10 py-5 text-lg font-bold text-[#10483e] shadow-xl shadow-black/10 transition duration-300 hover:-translate-y-1 hover:bg-white sm:w-auto"
                 >
                   Get Early Access
@@ -2035,7 +2044,10 @@ a {
 
               <div className="mt-4 flex flex-col gap-3 text-sm text-[#71827C]">
                 <button
-                  onClick={() => scrollToSection("early-access")}
+                  onClick={() => {
+  gtag('event', 'cta_click');
+  scrollToSection("early-access");
+}}
                   className="flex items-center gap-2 transition hover:text-[#1F5D4E]"
                 >
                   Get Early Access
