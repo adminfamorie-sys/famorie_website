@@ -208,9 +208,8 @@ function App() {
       });
 
       if (response.ok) {
-        window.dataLayer.push({
-    event: 'waitlist_signup'
-});
+        gtag('event', 'waitlist_signup');
+        
         setSubmitted(true);
         setShowModal(true);
         setEmail("");
