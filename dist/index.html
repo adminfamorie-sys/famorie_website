@@ -1,16 +1,33 @@
+
 <!doctype html>
 <html lang="en">
   <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" href="/famorie_logo.png" />
+    <link rel="icon" type="image/png" href="/famorie_logo.png" />
 
-  <title>Famorie</title>
-  <script type="module" crossorigin src="/assets/index-OzrSEyeD.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-c0iMiBAC.css">
-</head>
+    <title>Famorie</title>
+
+    <!-- Set analytics consent to denied before any Google Analytics tag loads -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () {
+        window.dataLayer.push(arguments);
+      };
+
+      window.gtag("consent", "default", {
+        analytics_storage: "denied",
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied"
+      });
+    </script>
+    <script type="module" crossorigin src="/assets/index-C8fPipK9.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BsH4diHq.css">
+  </head>
+
   <body>
-    <div id="root"></div>
-  </body>
+  <div id="root"></div>
+</body>
 </html>
