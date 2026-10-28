@@ -1,24 +1,36 @@
+
 <!doctype html>
 <html lang="en">
-  
-<head>
-    
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9MFPL17KYR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-9MFPL17KYR');
-</script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/famorie_logo.png" />
 
-  <link rel="icon" type="image/png" href="/famorie_logo.png" />
+    <title>Famorie</title>
 
-  <title>Famorie</title>
-</head>
+    <!-- Orestbida CookieConsent v3.1.0 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css"
+    />
+
+    <!-- Set analytics consent to denied before any Google Analytics tag loads -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () {
+        window.dataLayer.push(arguments);
+      };
+
+      window.gtag("consent", "default", {
+        analytics_storage: "denied",
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied"
+      });
+    </script>
+  </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
