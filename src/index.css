@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+/* Famorie CookieConsent styling */
+:root {
+  --cc-bg: #F7F3EB;
+  --cc-text: #173F35;
+  --cc-btn-primary-bg: #1F5D4E;
+  --cc-btn-primary-text: #F7F3EB;
+  --cc-btn-primary-hover-bg: #174B40;
+  --cc-btn-secondary-bg: #E8E2D6;
+  --cc-btn-secondary-text: #173F35;
+  --cc-btn-secondary-hover-bg: #DDD5C6;
+  --cc-toggle-bg-on: #1F5D4E;
+  --cc-separator-border-color: #E2DCCE;
+  --cc-modal-border-radius: 16px;
+  --cc-btn-border-radius: 10px;
+}
