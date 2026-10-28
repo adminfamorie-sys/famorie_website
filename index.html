@@ -2,107 +2,22 @@
 <html lang="en">
   
 <head>
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9MFPL17KYR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9MFPL17KYR');
+</script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="icon" type="image/png" href="/famorie_logo.png" />
 
   <title>Famorie</title>
-
-  <!-- Silktide Consent Manager -->
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-
-  <link
-    rel="stylesheet"
-    id="silktide-consent-manager-css"
-    href="https://cdn.jsdelivr.net/gh/silktide/consent-manager@v2.0.1/silktide-consent-manager.css"
-    integrity="sha384-EdMq+R+YOnsbelo08wPenoTlnxbAyxI11NMIxzugx/qAsbh64KcOkqxYqq6pfvO/"
-    crossorigin="anonymous"
-  />
-
-  <style id="silktide-consent-manager-overrides">
-    #stcm-wrapper {
-      --boxShadow: -5px 5px 10px 0px #00000012, 0px 0px 50px 0px #0000001a;
-      --fontFamily: Helvetica Neue, Segoe UI, Arial, sans-serif;
-      --primaryColor: #1F5D4E;
-      --backgroundColor: #F7F3EB;
-      --textColor: #173F35;
-      --backdropBackgroundColor: #00000033;
-      --backdropBackgroundBlur: 0px;
-      --iconColor: #1F5D4E;
-      --iconBackgroundColor: #F7F3EB;
-    }
-  </style>
-
-  <script
-    src="https://cdn.jsdelivr.net/gh/silktide/consent-manager@v2.0.1/silktide-consent-manager.js"
-    integrity="sha384-5Pt34uiIbCsvfiiZXoLi4HRf/YBXjr9c8e+gYeVo9smUaInNHYVtc8NZ8wUnXJIq"
-    crossorigin="anonymous"
-  ></script>
-
-  <script>
-    window.silktideConsentManager.init({
-      backdrop: {
-        show: false
-      },
-      icon: {
-        position: "bottomLeft"
-      },
-      prompt: {
-        position: "bottomCenter"
-      },
-      consentTypes: [
-        {
-          id: "essential",
-          label: "Essential",
-          description: "<p>These cookies are necessary for the website to function properly and cannot be switched off. They help with things like logging in and setting your privacy preferences.</p>",
-          required: true,
-          onAccept: function() {}
-        },
-        {
-          id: "analytics",
-          label: "Analytics",
-          description: "<p>These cookies help us understand how visitors use Famorie, such as which pages are visited most often. This helps us improve our website and user experience.</p>",
-          required: false,
-          defaultValue: false,
-          gtag: "analytics_storage",
-          scripts: [
-            {
-              url: "https://www.googletagmanager.com/gtag/js?id=G-9MFPL17KYR",
-              load: "async"
-            }
-          ],
-          onAccept: function() {
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-              window.dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-            gtag("config", "G-9MFPL17KYR");
-          }
-        }
-      ],
-      text: {
-        prompt: {
-          description: "<p>Famorie uses essential cookies to keep our website working. With your permission, we also use analytics cookies to understand how visitors use our site and improve your experience.</p>",
-          acceptAllButtonText: "Accept all",
-          acceptAllButtonAccessibleLabel: "Accept all cookies",
-          rejectNonEssentialButtonText: "Reject non-essential",
-          rejectNonEssentialButtonAccessibleLabel: "Reject all non-essential cookies",
-          preferencesButtonText: "Customize",
-          preferencesButtonAccessibleLabel: "Toggle preferences"
-        },
-        preferences: {
-          title: "Customize your cookie preferences",
-          description: "<p>Choose which optional cookies Famorie can use. Essential cookies are always enabled to keep our website working. You can change your preferences at any time.</p>",
-          saveButtonText: "Save and close",
-          saveButtonAccessibleLabel: "Save your cookie preferences",
-          creditLinkText: "Get this banner for free",
-          creditLinkAccessibleLabel: "Get this banner for free"
-        }
-      }
-    });
-  </script>
 </head>
   <body>
     <div id="root"></div>
