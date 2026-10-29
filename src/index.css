@@ -1,17 +1,79 @@
 @import "tailwindcss";
 
-/* Famorie CookieConsent styling */
-:root {
+/* Famorie — refined, compact cookie consent */
+#cc-main {
   --cc-bg: #F7F3EB;
-  --cc-text: #173F35;
+  --cc-primary-color: #173F35;
+  --cc-secondary-color: #526B61;
   --cc-btn-primary-bg: #1F5D4E;
-  --cc-btn-primary-text: #F7F3EB;
+  --cc-btn-primary-color: #FFFFFF;
   --cc-btn-primary-hover-bg: #174B40;
-  --cc-btn-secondary-bg: #E8E2D6;
-  --cc-btn-secondary-text: #173F35;
-  --cc-btn-secondary-hover-bg: #DDD5C6;
-  --cc-toggle-bg-on: #1F5D4E;
-  --cc-separator-border-color: #E2DCCE;
-  --cc-modal-border-radius: 16px;
-  --cc-btn-border-radius: 10px;
+  --cc-btn-secondary-bg: #F7F3EB;
+  --cc-btn-secondary-color: #173F35;
+  --cc-btn-secondary-hover-bg: #EDE7DB;
+  --cc-separator-border-color: #E5DED1;
+  --cc-modal-border-radius: 18px;
+  --cc-btn-border-radius: 999px;
+}
+
+#cc-main .cm {
+  max-width: 390px !important;
+  border: 1px solid rgba(31, 93, 78, 0.12) !important;
+  border-radius: 18px !important;
+  box-shadow: 0 14px 42px rgba(15, 45, 36, 0.14) !important;
+}
+
+#cc-main .cm__content {
+  padding: 22px 24px 16px !important;
+}
+
+#cc-main .cm__title {
+  color: #173F35 !important;
+  font-size: 1.15rem !important;
+  font-weight: 650 !important;
+  letter-spacing: -0.035em;
+  margin-bottom: 8px !important;
+}
+
+#cc-main .cm__desc {
+  color: #526B61 !important;
+  font-size: 0.91rem !important;
+  line-height: 1.55 !important;
+}
+
+#cc-main .cm__btn-group {
+  padding: 14px 24px 22px !important;
+  gap: 8px !important;
+}
+
+#cc-main .cm__btn {
+  min-height: 42px !important;
+  border-radius: 999px !important;
+  font-size: 0.88rem !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+}
+
+#cc-main .cm__btn--primary {
+  background: #1F5D4E !important;
+  color: #FFFFFF !important;
+  border: 1px solid #1F5D4E !important;
+}
+
+#cc-main .cm__btn--primary:hover {
+  background: #174B40 !important;
+}
+
+#cc-main .cm__btn--secondary {
+  background: transparent !important;
+  color: #173F35 !important;
+  border: 1px solid #D6DCCF !important;
+}
+
+#cc-main .cm__btn--secondary:hover {
+  background: #EDE7DB !important;
+}
+
+#cc-main .cm__footer {
+  border-top-color: #E5DED1 !important;
 }

@@ -1,5 +1,5 @@
-
 import 'vanilla-cookieconsent/dist/cookieconsent.css';
+import './cookieconsent-custom.css';
 import * as CookieConsent from 'vanilla-cookieconsent';
 
 const GA_ID = 'G-9MFPL17KYR';
@@ -45,19 +45,19 @@ CookieConsent.run({
   },
 
   guiOptions: {
-    consentModal: {
-      layout: 'box',
-      position: 'bottom center',
-      equalWeightButtons: true,
-      flipButtons: false
-    },
-    preferencesModal: {
-      layout: 'box',
-      position: 'right',
-      equalWeightButtons: true,
-      flipButtons: false
-    }
-  },
+  consentModal: {
+  layout: 'bar inline',
+  position: 'bottom center',
+  equalWeightButtons: true,
+  flipButtons: false
+},
+  preferencesModal: {
+    layout: 'box',
+    position: 'right',
+    equalWeightButtons: true,
+    flipButtons: false
+  }
+},
 
   onConsent: updateAnalyticsConsent,
   onChange: updateAnalyticsConsent,
@@ -69,7 +69,7 @@ CookieConsent.run({
         consentModal: {
           title: 'Your privacy matters',
           description:
-            'Famorie uses essential cookies to keep the website working and optional analytics cookies to understand how visitors use our website.',
+  'We use essential cookies to run the site and optional analytics to improve it.',
           acceptAllBtn: 'Accept all',
           acceptNecessaryBtn: 'Reject optional',
           showPreferencesBtn: 'Customize'

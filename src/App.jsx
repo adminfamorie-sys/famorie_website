@@ -656,327 +656,48 @@ if (window.__famorieAnalyticsConsent && typeof window.gtag === 'function') {
 
               <div className="famorie-hero-phones relative mx-auto mt-10 flex max-w-7xl items-end justify-center gap-4 sm:mt-14 md:gap-5 lg:gap-8">
 
-                {/* LEFT PHONE — AI INBOX */}
-                <div className="hidden md:block">
-                  <div className="famorie-phone w-[190px] lg:w-[270px] rounded-[2.8rem] border-[6px] border-[#202B2A] bg-[#202B2A] p-1 shadow-2xl shadow-black/25">
-                    <div className="overflow-hidden rounded-[2rem] bg-[#FAF8F3]">
+                
+{/* LEFT PHONE — FIGMA INBOX */}
+<div className="hidden md:block">
+  <div className="famorie-phone w-[190px] lg:w-[270px] rounded-[2.8rem] border-[6px] border-[#202B2A] bg-[#202B2A] p-1 shadow-2xl shadow-black/25">
+    <div className="overflow-hidden rounded-[2rem] bg-[#F7F3EB]">
+      <img
+        src="/images/inbox.png"
+        alt="Famorie family inbox showing a family conversation and AI suggestion"
+        className="block h-auto w-full"
+      />
+    </div>
+  </div>
+</div>
 
-                      {/* Dynamic Island */}
-                      <div className="flex justify-center pt-2">
-                        <div className="h-5 w-24 rounded-full bg-[#202B2A]" />
-                      </div>
+{/* CENTER PHONE — FIGMA HOME DASHBOARD */}
+<div className="relative z-10">
+  <div className="famorie-phone famorie-center-phone w-[min(86vw,290px)] rounded-[2.5rem] border-[6px] border-[#202B2A] bg-[#202B2A] p-1 shadow-2xl shadow-black/30 sm:w-[330px]">
+    <div className="overflow-hidden rounded-[2.2rem] bg-[#F7F3EB]">
+      <img
+        src="/images/middle.png"
+        alt="Famorie home dashboard showing the Good morning, Mom greeting and family task status"
+        className="block h-auto w-full"
+      />
+    </div>
+  </div>
+</div>
 
-                      <div className="px-5 pb-8 pt-5">
-                        <div className="flex items-center justify-between">
-                          <div>
-                            <p className="text-[10px] font-semibold text-[#7B8E88]">
-                              Famorie
-                            </p>
-
-                            <h3 className="famorie-heading mt-1 text-xl font-bold text-[#2F3A45]">
-                              Inbox
-                            </h3>
-                          </div>
-                        </div>
-
-                        <div className="mt-5 rounded-2xl bg-[#1F5D4E] p-4 text-white">
-                          <div className="flex items-center gap-2">
-
-                            <p className="text-xs font-bold">
-                              Famorie AI
-                            </p>
-                          </div>
-
-                          <p className="mt-2 text-[11px] leading-4 text-[#D1E3DB]">
-                            I found 3 things worth adding to your family schedule.
-                          </p>
-                        </div>
-
-                        <p className="mt-5 text-[9px] font-bold uppercase tracking-[0.15em] text-[#9AA9A3]">
-                          Recent
-                        </p>
-
-                        <div className="mt-3 space-y-3">
-                          <div className="rounded-2xl border border-[#E0E7E2] bg-white p-3">
-                            <p className="text-[11px] font-semibold text-[#2F3A45]">
-                              School newsletter
-                            </p>
-                            <p className="mt-1 text-[9px] leading-4 text-[#7B8E88]">
-                              Permission slip due Friday
-                            </p>
-
-                            <div className="mt-2 inline-flex rounded-full bg-[#EAF2EB] px-2 py-1 text-[8px] font-bold text-[#1F5D4E]">
-                              Add to calendar
-                            </div>
-                          </div>
-
-                          <div className="rounded-2xl border border-[#E0E7E2] bg-white p-3">
-                            <p className="text-[11px] font-semibold text-[#2F3A45]">
-                              Dentist reminder
-                            </p>
-                            <p className="mt-1 text-[9px] text-[#7B8E88]">
-                              Thursday · 4:30 PM
-                            </p>
-                          </div>
-
-                          <div className="rounded-2xl border border-[#E0E7E2] bg-white p-3">
-                            <p className="text-[11px] font-semibold text-[#2F3A45]">
-                              Soccer update
-                            </p>
-                            <p className="mt-1 text-[9px] text-[#7B8E88]">
-                              Practice moved to 6 PM
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-                {/* CENTER PHONE — TODAY */}
-                <div className="relative z-10">
-                  <div className="famorie-phone famorie-center-phone w-[min(86vw,290px)] rounded-[2.5rem] border-[6px] border-[#202B2A] bg-[#202B2A] p-1 shadow-2xl shadow-black/30 sm:w-[330px]">
-                    <div className="overflow-hidden rounded-[2.2rem] bg-[#FAF8F3]">
-
-                      {/* Dynamic Island */}
-                      <div className="flex justify-center pt-2">
-                        <div className="h-5 w-28 rounded-full bg-[#202B2A]" />
-                      </div>
-
-                      <div className="px-6 pb-10 pt-5">
-
-                        <div className="flex items-center justify-between">
-                          <div>
-                            <p className="text-[11px] text-[#7B8E88]">
-                              Tuesday, September 1
-                            </p>
-
-                            <h3 className="famorie-heading mt-1 text-[22px] font-bold tracking-tight text-[#2F3A45]">
-                              Good morning 👋
-                            </h3>
-                          </div>
-                        </div>
-
-                        {/* Today summary */}
-                        <div className="mt-6 rounded-3xl bg-[#1F5D4E] p-5 text-white">
-                          <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#B9D8CA]">
-                            Today
-                          </p>
-
-                          <p className="famorie-heading mt-2 text-3xl font-bold">
-                            8 things
-                          </p>
-
-                          <p className="mt-1 text-[11px] text-[#D1E3DB]">
-                            for your family to stay on top of
-                          </p>
-                        </div>
-
-
-                        {/* Quick stats */}
-                        <div className="mt-4 grid grid-cols-2 gap-3">
-
-                          <div className="rounded-2xl bg-white p-4">
-                            <CalendarDays
-                              size={18}
-                              className="text-[#1F5D4E]"
-                            />
-
-                            <p className="famorie-heading mt-3 text-2xl font-bold text-[#2F3A45]">
-                              3
-                            </p>
-
-                            <p className="mt-1 text-[10px] text-[#7B8E88]">
-                              Events today
-                            </p>
-                          </div>
-
-                          <div className="rounded-2xl bg-white p-4">
-                            <ClipboardCheck
-                              size={18}
-                              className="text-[#1F5D4E]"
-                            />
-
-                            <p className="famorie-heading mt-3 text-2xl font-bold text-[#2F3A45]">
-                              5
-                            </p>
-
-                            <p className="mt-1 text-[10px] text-[#7B8E88]">
-                              Tasks
-                            </p>
-                          </div>
-
-                        </div>
-
-
-                        {/* Coming up */}
-                        <div className="mt-4 rounded-2xl border border-[#E0E7E2] bg-white p-4">
-
-                          <div className="flex items-center justify-between">
-                            <p className="text-[9px] font-bold uppercase tracking-[0.15em] text-[#899B94]">
-                              Coming up
-                            </p>
-
-                            <CalendarDays
-                              size={15}
-                              className="text-[#1F5D4E]"
-                            />
-                          </div>
-
-                          <div className="mt-3 space-y-2">
-
-                            <div className="flex items-center justify-between rounded-xl bg-[#F7F3EB] px-3 py-3">
-                              <div>
-                                <p className="text-[10px] font-semibold text-[#2F3A45]">
-                                  Soccer practice
-                                </p>
-
-                                <p className="mt-1 text-[9px] text-[#7B8E88]">
-                                  Today
-                                </p>
-                              </div>
-
-                              <p className="text-[9px] font-bold text-[#1F5D4E]">
-                                5:30 PM
-                              </p>
-                            </div>
-
-                            <div className="flex items-center justify-between rounded-xl bg-[#F7F3EB] px-3 py-3">
-                              <div>
-                                <p className="text-[10px] font-semibold text-[#2F3A45]">
-                                  Permission slip
-                                </p>
-
-                                <p className="mt-1 text-[9px] text-[#7B8E88]">
-                                  Due tomorrow
-                                </p>
-                              </div>
-
-                              <p className="text-[9px] font-bold text-[#1F5D4E]">
-                                Due
-                              </p>
-                            </div>
-
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-                {/* RIGHT PHONE — CALENDAR */}
-                <div className="hidden md:block">
-                  <div className="famorie-phone w-[190px] lg:w-[270px] rounded-[2.8rem] border-[6px] border-[#202B2A] bg-[#202B2A] p-1 shadow-2xl shadow-black/25">
-                    <div className="overflow-hidden rounded-[2rem] bg-[#FAF8F3]">
-
-                      {/* Dynamic Island */}
-                      <div className="flex justify-center pt-2">
-                        <div className="h-5 w-24 rounded-full bg-[#202B2A]" />
-                      </div>
-
-                      <div className="px-5 pb-8 pt-5">
-
-                        <div className="flex items-center justify-between">
-                          <div>
-                            <p className="text-[10px] text-[#7B8E88]">
-                              Family
-                            </p>
-
-                            <h3 className="famorie-heading mt-1 text-xl font-bold text-[#2F3A45]">
-                              Calendar
-                            </h3>
-                          </div>
-
-                          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#EAF2EB] text-[#1F5D4E]">
-                            <CalendarDays size={17} />
-                          </div>
-                        </div>
-
-                        {/* Mini calendar */}
-                        <div className="mt-5 rounded-2xl bg-white p-4">
-
-                          <div className="flex items-center justify-between">
-                            <p className="text-[11px] font-bold text-[#2F3A45]">
-                              September 2026
-                            </p>
-
-                            <span className="text-[9px] font-semibold text-[#1F5D4E]">
-                              Today
-                            </span>
-                          </div>
-
-                          <div className="mt-4 grid grid-cols-7 gap-y-3 text-center text-[8px] text-[#899B94]">
-                            {["M", "T", "W", "T", "F", "S", "S"].map((day) => (
-                              <span key={day} className="font-bold">
-                                {day}
-                              </span>
-                            ))}
-
-                            {[31, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map(
-                              (day, index) => (
-                                <span
-                                  key={`${day}-${index}`}
-                                  className={
-                                    day === 1
-                                      ? "mx-auto flex h-5 w-5 items-center justify-center rounded-full bg-[#1F5D4E] font-bold text-white"
-                                      : "text-[#536B63]"
-                                  }
-                                >
-                                  {day}
-                                </span>
-                              ),
-                            )}
-                          </div>
-                        </div>
-
-                        <p className="mt-5 text-[9px] font-bold uppercase tracking-[0.15em] text-[#899B94]">
-                          Tuesday
-                        </p>
-
-                        <div className="mt-3 space-y-3">
-
-                          <div className="rounded-2xl border-l-4 border-[#1F5D4E] bg-white p-3">
-                            <p className="text-[10px] font-semibold text-[#2F3A45]">
-                              School pickup
-                            </p>
-
-                            <p className="mt-1 text-[9px] text-[#7B8E88]">
-                              3:15 PM · Mom
-                            </p>
-                          </div>
-
-                          <div className="rounded-2xl border-l-4 border-[#9BC9A5] bg-white p-3">
-                            <p className="text-[10px] font-semibold text-[#2F3A45]">
-                              Soccer practice
-                            </p>
-
-                            <p className="mt-1 text-[9px] text-[#7B8E88]">
-                              5:30 PM · Dad
-                            </p>
-                          </div>
-
-                          <div className="rounded-2xl border-l-4 border-[#D8C49A] bg-white p-3">
-                            <p className="text-[10px] font-semibold text-[#2F3A45]">
-                              Grocery run
-                            </p>
-
-                            <p className="mt-1 text-[9px] text-[#7B8E88]">
-                              6:00 PM · Dad
-                            </p>
-                          </div>
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+{/* RIGHT PHONE — FIGMA TASKS */}
+<div className="hidden md:block">
+  <div className="famorie-phone w-[190px] lg:w-[270px] rounded-[2.8rem] border-[6px] border-[#202B2A] bg-[#202B2A] p-1 shadow-2xl shadow-black/25">
+    <div className="overflow-hidden rounded-[2rem] bg-[#F7F3EB]">
+      <img
+        src="/images/right.png"
+        alt="Famorie tasks screen showing today's tasks, weekly tasks and family tasks"
+        className="block h-auto w-full"
+      />
+    </div>
+  </div>
+</div>
+</div>
+</div>            </div>
+          </section>
         {/* =========================================================
             PROBLEM RECOGNITION
         ========================================================== */}
